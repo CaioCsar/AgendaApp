@@ -1,0 +1,7 @@
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.csproj.AssemblyReference.cache
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.AgendacrudAtt.resources
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.csproj.GenerateResource.cache
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.GeneratedMSBuildEditorConfig.editorconfig
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.AssemblyInfoInputs.cache
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.AssemblyInfo.cs
+G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.csproj.CoreCompileInputs.cache
