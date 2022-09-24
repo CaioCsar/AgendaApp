@@ -42,14 +42,23 @@ namespace AgendaApp
             this.btneditar = new System.Windows.Forms.Button();
             this.btnlimpar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nome,
+            this.Email,
+            this.Telefone});
             this.dataGridView1.Location = new System.Drawing.Point(17, 18);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(545, 210);
@@ -98,7 +107,7 @@ namespace AgendaApp
             // txtid
             // 
             this.txtid.Location = new System.Drawing.Point(84, 252);
-            this.txtid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(72, 29);
             this.txtid.TabIndex = 5;
@@ -106,7 +115,7 @@ namespace AgendaApp
             // txtnome
             // 
             this.txtnome.Location = new System.Drawing.Point(84, 293);
-            this.txtnome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtnome.Margin = new System.Windows.Forms.Padding(4);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(212, 29);
             this.txtnome.TabIndex = 6;
@@ -114,7 +123,7 @@ namespace AgendaApp
             // txtemail
             // 
             this.txtemail.Location = new System.Drawing.Point(84, 333);
-            this.txtemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtemail.Margin = new System.Windows.Forms.Padding(4);
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(212, 29);
             this.txtemail.TabIndex = 7;
@@ -122,7 +131,7 @@ namespace AgendaApp
             // txttel
             // 
             this.txttel.Location = new System.Drawing.Point(84, 374);
-            this.txttel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttel.Margin = new System.Windows.Forms.Padding(4);
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(127, 29);
             this.txttel.TabIndex = 8;
@@ -133,7 +142,7 @@ namespace AgendaApp
             this.btnadicionar.Enabled = false;
             this.btnadicionar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnadicionar.Location = new System.Drawing.Point(465, 245);
-            this.btnadicionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnadicionar.Margin = new System.Windows.Forms.Padding(4);
             this.btnadicionar.Name = "btnadicionar";
             this.btnadicionar.Size = new System.Drawing.Size(96, 32);
             this.btnadicionar.TabIndex = 9;
@@ -146,7 +155,7 @@ namespace AgendaApp
             this.btneditar.Enabled = false;
             this.btneditar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btneditar.Location = new System.Drawing.Point(465, 286);
-            this.btneditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btneditar.Margin = new System.Windows.Forms.Padding(4);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(96, 32);
             this.btneditar.TabIndex = 10;
@@ -159,7 +168,7 @@ namespace AgendaApp
             this.btnlimpar.Enabled = false;
             this.btnlimpar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnlimpar.Location = new System.Drawing.Point(465, 367);
-            this.btnlimpar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnlimpar.Margin = new System.Windows.Forms.Padding(4);
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(96, 32);
             this.btnlimpar.TabIndex = 12;
@@ -172,12 +181,35 @@ namespace AgendaApp
             this.btnexcluir.Enabled = false;
             this.btnexcluir.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnexcluir.Location = new System.Drawing.Point(465, 326);
-            this.btnexcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnexcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnexcluir.Name = "btnexcluir";
             this.btnexcluir.Size = new System.Drawing.Size(96, 32);
             this.btnexcluir.TabIndex = 11;
             this.btnexcluir.Text = "Excluir";
             this.btnexcluir.UseVisualStyleBackColor = false;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.Width = 140;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Width = 140;
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            this.Telefone.Width = 140;
             // 
             // AgendacrudAtt
             // 
@@ -202,7 +234,7 @@ namespace AgendaApp
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AgendacrudAtt";
@@ -230,6 +262,10 @@ namespace AgendaApp
         private System.Windows.Forms.Button btneditar;
         private System.Windows.Forms.Button btnlimpar;
         private System.Windows.Forms.Button btnexcluir;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
     }
 }
 
