@@ -12,15 +12,7 @@ G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\Agenda
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\AgendaApp.runtimeconfig.dev.json
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\AgendaApp.dll
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\AgendaApp.pdb
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\MySql.Data.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\ZstdNet.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.csproj.CopyComplete
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.dll
 G:\Senai\ProgAplicativo\BDAPP\AgendaApp\AgendaApp\obj\Debug\netcoreapp3.1\AgendaApp.pdb

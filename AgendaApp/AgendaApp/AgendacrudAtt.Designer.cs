@@ -30,6 +30,10 @@ namespace AgendaApp
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,10 +46,6 @@ namespace AgendaApp
             this.btneditar = new System.Windows.Forms.Button();
             this.btnlimpar = new System.Windows.Forms.Button();
             this.btnexcluir = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +63,31 @@ namespace AgendaApp
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(545, 210);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.Width = 140;
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.Width = 140;
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
+            this.Telefone.Width = 140;
             // 
             // label1
             // 
@@ -111,6 +136,7 @@ namespace AgendaApp
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(72, 29);
             this.txtid.TabIndex = 5;
+            this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             // 
             // txtnome
             // 
@@ -119,6 +145,7 @@ namespace AgendaApp
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(212, 29);
             this.txtnome.TabIndex = 6;
+            this.txtnome.TextChanged += new System.EventHandler(this.txtnome_TextChanged);
             // 
             // txtemail
             // 
@@ -127,6 +154,7 @@ namespace AgendaApp
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(212, 29);
             this.txtemail.TabIndex = 7;
+            this.txtemail.TextChanged += new System.EventHandler(this.txtemail_TextChanged);
             // 
             // txttel
             // 
@@ -135,6 +163,7 @@ namespace AgendaApp
             this.txttel.Name = "txttel";
             this.txttel.Size = new System.Drawing.Size(127, 29);
             this.txttel.TabIndex = 8;
+            this.txttel.TextChanged += new System.EventHandler(this.txttel_TextChanged);
             // 
             // btnadicionar
             // 
@@ -148,6 +177,7 @@ namespace AgendaApp
             this.btnadicionar.TabIndex = 9;
             this.btnadicionar.Text = "Adicionar";
             this.btnadicionar.UseVisualStyleBackColor = false;
+            this.btnadicionar.Click += new System.EventHandler(this.btnadicionar_Click);
             // 
             // btneditar
             // 
@@ -161,6 +191,7 @@ namespace AgendaApp
             this.btneditar.TabIndex = 10;
             this.btneditar.Text = "Editar";
             this.btneditar.UseVisualStyleBackColor = false;
+            this.btneditar.Click += new System.EventHandler(this.btneditar_Click);
             // 
             // btnlimpar
             // 
@@ -174,6 +205,7 @@ namespace AgendaApp
             this.btnlimpar.TabIndex = 12;
             this.btnlimpar.Text = "Limpar";
             this.btnlimpar.UseVisualStyleBackColor = false;
+            this.btnlimpar.Click += new System.EventHandler(this.btnlimpar_Click);
             // 
             // btnexcluir
             // 
@@ -187,29 +219,7 @@ namespace AgendaApp
             this.btnexcluir.TabIndex = 11;
             this.btnexcluir.Text = "Excluir";
             this.btnexcluir.UseVisualStyleBackColor = false;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.Width = 140;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.Width = 140;
-            // 
-            // Telefone
-            // 
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.Width = 140;
+            this.btnexcluir.Click += new System.EventHandler(this.btnexcluir_Click);
             // 
             // AgendacrudAtt
             // 
