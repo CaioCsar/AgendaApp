@@ -139,28 +139,73 @@ namespace AgendaApp
 
         private void txtid_TextChanged(object sender, EventArgs e)
         {
-
+            if(txtid.Text != "" && txtnome.Text != "" && txtemail.Text != "" && txttel.Text != "")
+            {
+                btnadicionar.Enabled = true;
+            }
+            else
+            {
+                btnadicionar.Enabled = false;
+            }
         }
 
         // evento para trata exibicao de botos quando há campos vazios
         private void txtnome_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtid.Text != "" && txtnome.Text != "" && txtemail.Text != "" && txttel.Text != "")
+            {
+                btnadicionar.Enabled = true;
+            }
+            else
+            {
+                btnadicionar.Enabled = false;
+            }
         }
 
         private void txtemail_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtid.Text != "" && txtnome.Text != "" && txtemail.Text != "" && txttel.Text != "")
+            {
+                btnadicionar.Enabled = true;
+            }
+            else
+            {
+                btnadicionar.Enabled = false;
+            }
         }
 
         private void txttel_TextChanged(object sender, EventArgs e)
         {
-
+            if (txtid.Text != "" && txtnome.Text != "" && txtemail.Text != "" && txttel.Text != "")
+            {
+                btnadicionar.Enabled = true;
+            }
+            else
+            {
+                btnadicionar.Enabled = false;
+            }
         }
 
         private void btnexcluir_Click(object sender, EventArgs e)
         {
+            cruds = new Modelo.Agenda();
+            try
+            {
+                cruds.ageId = Convert.ToInt32(txtid.Text);
+                cruds.Remover();
+                dataGridView1.Rows.RemoveAt(catchRowIndex);
+                btneditar.Enabled = false;
+                btnexcluir.Enabled = false;
+                txtid.Clear();
+                txtnome.Clear();
+                txtemail.Clear();
+                txttel.Clear();
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao realizar a operação", "Database", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnlimpar_Click(object sender, EventArgs e)
